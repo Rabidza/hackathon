@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% block title %}{% endblock %}
+{% block head %}{% endblock %}
+{% block content %}
+{% load staticfiles %}
+    <form method="post" action=".">{% csrf_token %}
+        
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="816" height="100%" id="Table1">
+        <tr>
+            <td width="100%" nowrap align="center">
+                <table border="0" cellpadding="0" cellspacing="0" bgcolor="whitesmoke" width="350px">
+                    <form name="form1" method="post" action="login.aspx" language="javascript" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+                        <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+                        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+                        <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+                        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="sdlAsNyrRjhg0TSzam8VvwjOnhp/FpVq63mieq5CyDSoI+gHMVsWvtSeRhY0srzmp775PzVU1FQCmZHmzIAwD9GOaRFz9sqy+Kko8/Nj/cKi0tOLZ7sBreENUOJeqrvF" />
+                        <tr>
+                            <td height="16px" width="16px" nowrap="" style="border-top: darkgray 1px solid; border-left: darkgray 1px solid;">&#160;</td>
+                            <td width="290px" nowrap="" style="border-top: darkgray 1px solid;">&#160;</td>
+                            <td width="16px" nowrap="" style="border-top: darkgray 1px solid; border-right: darkgray 1px solid;">&#160;</td>
+                        </tr>
+                        <tr>
+                            <td width="16" nowrap style="border-left: darkgray 1px solid;">&#160;</td>
+                            <td align="center">
+                                <table border="0" cellpadding="0" cellspacing="0" width="316">
+                                    <tr>
+                                        <td colspan="2" align="center" height="135" valign="top">
+                                            <table border="0">
+                                                <tr>
+                                                    <td colspan="3" height="42" align="center">
+                                                        <img src="{% static "img/productlogo.gif" %}" alt="Project Portfolio Office" border="0" height="42">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" height="16">
+                                                    </td>
+                                                </tr>
+                                                {{ form.as_table }}
+                                                <tr>
+                                                    <td colspan="3" height="16">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3" align="right">
+                                                        <input type="submit" name="LoginButton" value="  Login  " id="LoginButton" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="16" nowrap style="border-right: darkgray 1px solid;">&#160;</td>
+                        </tr>
+                        <tr>
+                            <td width="16" nowrap style="border-left: darkgray 1px solid;">&#160;</td>
+                            <td height="16">
+                            </td>
+                            <td width="16" nowrap style="border-right: darkgray 1px solid;">&#160;</td>
+                        </tr>
+                        <tr>
+                            <td width="16" nowrap style="border-left: darkgray 1px solid;">&#160;</td>
+                            <td align="center" height="14">
+                                <font color="red">
+                                    <span id="ErrorMessage"></span>
+                                </font>
+                            </td>
+                            <td width="16" nowrap style="border-right: darkgray 1px solid;">&#160;</td>
+                        </tr>
+                        <tr>
+                            <td width="16" nowrap style="border-left: darkgray 1px solid;">&#160;</td>
+                            <td height="16">
+                            </td>
+                            <td width="16" nowrap style="border-right: darkgray 1px solid;">&#160;</td>
+                        </tr>
+                        <tr>
+                            <td width="16" nowrap style="border-left: darkgray 1px solid;">&#160;</td>
+                            <td align="center">
+                                Click <b><a href="forgotpassword.aspx">here</a></b> if you have forgotten your password?
+                            </td>
+                            <td width="16" nowrap style="border-right: darkgray 1px solid;">&#160;</td>
+                        </tr>
+                        <tr>
+                            <td height="16px" width="16px" nowrap="" style="border-bottom: darkgray 1px solid; border-left: darkgray 1px solid;">&#160;</td>
+                            <td width="290px" nowrap="" style="border-bottom: darkgray 1px solid;">&#160;</td>
+                            <td width="16px" nowrap="" style="border-bottom: darkgray 1px solid; border-right: darkgray 1px solid;">&#160;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="ClientOffSet" id="ClientOffSet" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="hidden" name="HiddenField1" id="HiddenField1" value="vFImaktEpqzwCtz9DxHwIjCOkAqV2eebF5eFcVxOUpFoY6mywRP1qDxLC3Ca3XLKLXqHOthrA3cdeY0nX2jlOmvCHTDiTWU6d4cAQfjCti1wlTrnDYCByj5jmo95p9Ynig9j50X2Sg2qv8axmZf4TTH493XlfnXuJNOFUHsMAKsSrPxoNLTPedTOYFkBcwWoIHhhtVdfrS4JkyMtFsXUUHQp49qOgruOxEJjrQ42ryiLjKok305tYCTA11ntpP8AipVgonBzyfmgjEFtVGVpvAzvuIs0nLNczin3yH5QyG53Zxbwv3Xi3SOh0kwf4LMmSJqBaM5OKF1pE6V6r5FtxojhTFDNVZVn3TlPGaWj8JXybjd3Ozy9GdznkJrUIr3vuNvvVGzRjguoQvFumK9flWhad7p7sBaRPmDNxsiI9hZksLWzD7s8sYKYqVRYb2ihFdYor173m0fE67sSkz3vTcj1cphbbJrH82eOxsHLAyW12Gbtn8xl9wOm4gMBUfccJYFEcdf1rrveGr9VNxycWFHLn1UQgG1eW4sdAXRJd53RBugMg0ygqAFDQ3akJOVl0QIM8fUzgp8aMzK3VHuqRUyWypNH7r9PkRbumUNBf8AABp0ashPCeoTfcvXTSN2zpt04YZRA3sLTTyUIywYZb7v585S074tRFLUSz6CSQPIvdAMobOefycXs746cHaD893NIdCT2tFJMy9b7toZsZNdmxmU49kLzLKvkwDKZ5mwsTK48c8sdBVjw" />
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+            </td>
+        </tr>
+    </table>
+{% endblock %}

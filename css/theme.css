@@ -1,0 +1,341 @@
+/* Global */
+*
+{
+  font-family: Tahoma;
+  font-size:11px;
+}
+body
+{     
+  margin: 0px;
+  overflow: auto;
+  background-color: White; 
+}
+div.bodydiv 
+{
+    position:absolute;
+}
+form
+{
+  margin: 20em;
+}
+a
+{
+  color: Black;
+  text-decoration: none;
+}
+a:hover
+{
+  color: Black;
+}
+td.seperator
+{
+  width: 1px;
+}
+td.hseperator
+{
+  height : 0px;
+}
+/* Application Title */
+table.applicationtitle td
+{
+  border-bottom: lightgrey 1px solid;
+}
+table.applicationtitle img
+{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+/* Menu Bar */
+td.topmenubar
+{
+  background-color: WhiteSmoke;
+}
+td.topmenubar a
+{
+  text-decoration: none;
+  color: Black;
+  width: 100%;
+}
+td.topmenubar a:hover
+{
+  text-decoration: none;
+  color: Black;
+}
+td.topmenubaritem
+{
+  font-weight: bold;
+  text-align: center;
+}
+td.topmenubaritemover
+{
+  font-weight: bold;
+  text-align: center;
+  border-style: solid;
+  border-width : 1px;
+  background-color: Gainsboro;
+  border-color: DimGray;
+}
+td.topmenubarspacer
+{
+  text-align: center;
+  color: DimGray;
+}
+/* Page Title */
+td.pagetitle
+{
+  border-style: solid;
+  border-width: 1px;
+  background-color: LightGrey;
+  border-bottom-color: DimGray;  
+  border-right-color: DimGray;
+  border-top-color: WhiteSmoke;  
+  border-left-color: WhiteSmoke; 
+  height: 23px;
+}
+td.pagetitle img
+{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+td.pagetitletext
+{
+  font-weight: bold;
+  width: 100%;
+}
+/* QPL */
+#qpl
+{
+  position: absolute;
+  z-index: 999;
+  width: 150px;
+  background-color:white; 
+  border: dimgray 1px solid;
+}
+#qpl a
+{
+  color: Black;
+  width: 100%;
+  text-decoration: none;
+}
+#qpl a:hover
+{
+  text-decoration: none;
+}
+/* Buttons */
+td.actionicon
+{
+  text-align: center;
+}
+
+td.actionicondisabled
+{
+  text-align: center;
+}
+
+td.actionicondisabled a
+{
+  color: LightGrey;
+}
+
+td.actionicondisabled img
+{
+  opacity:0.4;
+    filter:alpha(opacity=40);
+}
+
+td.actionicon a[disabled="disabled"] img
+{
+  opacity:0.4;
+    filter:alpha(opacity=40);
+}
+
+img.controlicon, img.controliconreadonly
+{
+  position: relative;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  left: 5px;  
+}
+img.controlicon
+{
+  cursor: pointer;
+}
+a.linkbutton
+{
+  color: Navy;
+  text-decoration: underline;
+}
+/* List Table */
+.blocktitle
+{
+  font-weight: bold;
+  border-style: solid;
+  border-width: 1px;
+  background-color: Gainsboro;
+  border-bottom-color: DimGray;  
+  border-right-color: DimGray;
+  border-top-color: WhiteSmoke;  
+  border-left-color: WhiteSmoke;
+}
+.blocktitle a
+{
+  font-weight: normal;
+}
+
+td.blocktitletext
+{
+  font-weight: bold;
+}
+.blocktableheading
+{
+  border-style:solid;
+  border-width:1px; 
+  background-color: Gainsboro;
+  border-left-color: WhiteSmoke;
+  border-top-color: WhiteSmoke;
+  border-right-color: DimGray;
+  border-bottom-color: DimGray; 
+}
+.blocktableheading a
+{
+  color: Black;
+  display: block;
+}
+span.sortarrow 
+{
+  color: black;
+  font-weight: bold;
+}
+
+tr.tablerow, tr.tr, tr.tablerowover, tr.tro
+{
+  height: 20px;
+}
+tr.tablerowover, tr.tro
+{
+  cursor: pointer;
+  background-color: WhiteSmoke; 
+}
+.tablecell, .tc, .tcc, .tcr
+{
+  vertical-align: top;
+  border-bottom: solid 1px gainsboro; 
+}
+.tablecell, .tc
+{
+  text-align: left;
+}
+.tcc
+{
+  text-align: center;
+}
+.tcr
+{
+  text-align: right;
+}
+div.documentlink
+{
+  position: absolute;
+  background-color:white; 
+  left:0px;
+  width: 250px;
+  border: dimgray 1px solid;
+}
+div.documentlink a
+{
+  color: Black;
+  width: 100%;
+}
+div.documentlink a:hover
+{
+  text-decoration: none;
+}
+/* Controls */
+.required
+{
+  background-color: gainsboro;
+}
+
+.breakafter
+{
+    page-break-after: always !important;
+}
+
+.timepicker table tr td
+{
+    vertical-align:middle !important;
+}
+
+
+.logoblock
+{
+  background: url(gradients/defaultlogoleft.jpg) top left repeat-y;
+  background-color: red
+ ;
+}
+
+.logoblockrev
+{
+  background : url(gradients/defaultlogoright.jpg) top right repeat-y;
+  background-color: #a5c3f7;
+}
+
+td.topmenubaritemover
+{
+  border-color: Orange;    
+  background-color: Moccasin;
+}
+
+td.pagetitle
+{
+  background-color: #5a86d6;
+  border-left-color : #002c94;
+  border-top-color : #002c94;
+  border-right-color : #002c94;
+  border-bottom-color : #002c94; 
+  background : url(gradients/defaultpagetitle.jpg) top left repeat-x;
+}
+
+td.pagetitletext
+{
+  color: Whitesmoke;
+}
+
+a:hover
+{
+  color:orange;
+}
+
+.blocktitle
+{
+  border-left-color: #9cbef7;
+  border-top-color: #9cbef7;
+  border-right-color: #002c94;
+  border-bottom-color: #002c94;
+  background-color: #a5c3f7;
+  background : url(gradients/defaultblocktitle.jpg) top left repeat-x;
+}
+
+.blocktableheading
+{
+  border-left-color:red;
+  border-top-color:red;
+  border-right-color:dimgray;
+  border-bottom-color:dimgray;
+  background-image : url(dients/defaultblocktableheading.jpg);
+  background-position: top left;
+  background-repeat: repeat-x;
+}
+
+tr.tablerowover
+{
+  background-color: moccasin;
+} 
+tr.tro
+{
+   background-color: moccasin;
+}
