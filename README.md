@@ -1,5 +1,5 @@
 # hackathon
-This is just a spoofing site I created while taking part in our company's hackathon competion.
+This is just a spoofing site I created while taking part in our company's hackathon competition.
 
 <h2>TODO:</h2>
 <ul>
